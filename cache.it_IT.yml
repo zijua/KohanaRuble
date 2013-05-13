@@ -1,0 +1,145 @@
+!!com.aptana.scripting.model.BundleElement
+author: Giovanni Manuel Toppi
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children:
+    - children: &id001 []
+      commandName: Controller ...
+      customProperties: null
+      displayName: Controller ...
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Action ...
+      customProperties: null
+      displayName: Action ...
+      path: bundle.rb
+      scope: null
+    commandName: Controllers
+    customProperties: null
+    displayName: Controllers
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: ModelORM ...
+      customProperties: null
+      displayName: ModelORM ...
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Model ...
+      customProperties: null
+      displayName: Model ...
+      path: bundle.rb
+      scope: null
+    commandName: Models
+    customProperties: null
+    displayName: Models
+    path: bundle.rb
+    scope: null
+  commandName: Kohana
+  customProperties: null
+  displayName: Kohana
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [Controller]
+  description: null
+  displayName: Controller ...
+  expansion: "<?php defined('SYSPATH') or die('No direct script access.');\n/**\n\
+    \ * $1\n */\nclass Controller_${2:ClassName} extends Controller_${3:AnotherClass}\
+    \ {\n\tfunction action_index() {\n\t\t${0:// code...}\n\t}\n} // End ${2:ClassName}\
+    \ Controller\n\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [action]
+  description: null
+  displayName: Action ...
+  expansion: "\n/**\n * $1\n */\npublic function action_${2:ActionName}()\n{\n\t\n\
+    }\n\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [Model]
+  description: null
+  displayName: Model ...
+  expansion: "<?php defined('SYSPATH') or die('No direct script access.');\n/**\n\
+    \ * $1\n */\nclass Model_${2:ClassName} extends Model {\n\t\n} // End ${2:ClassName}\
+    \ Model\n\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [ModelORM]
+  description: null
+  displayName: ModelORM ...
+  expansion: "<?php defined('SYSPATH') or die('No direct script access.');\n/**\n\
+    \ * $1\n */\nclass Model_${2:ClassName} extends ORM {\n\t\n} // End ${2:ClassName}\
+    \ Model\n\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: null
+displayName: Kohana
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
